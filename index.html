@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+<style>.error{color: #dc3545;}.form-group {    margin-bottom: 1rem;    position: relative;}
+.custom-control-inline label.error {    color: #dc3545;    position: absolute;    top: 2px;    clear: both;    display: block;    width: 202px;    left: 230px;    height: 27px;   margin-bottom:10px;    line-height: 20px;}</style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 mt-4 mb-4">
+                <h3 class="text-center">jQuery Form Validation</h3>
+            </div>
+
+            <div class="col-md-10 ml-auto mr-auto">
+                <!-- form init -->
+                <form name="registration">
+                    <div class="form-group">
+                        <label for="fullname">Fullname</label>
+                        <input id="fullname" name="fullname" placeholder="Fullname" type="text" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="Username">Username</label>
+                        <input id="Username" name="Username" placeholder="Username" type="text" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Username</label>
+                        <input id="password" name="password" placeholder="password" type="password"
+                            class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="Email">Email</label>
+                        <input id="Email" name="Email" placeholder="Email" type="text" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="about1">About yourself</label>
+                        <textarea id="about1" name="about1" cols="40" rows="4" class="form-control"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="select">Select</label>
+                        <div>
+                            <select id="select1" name="select1" class="custom-select">
+                                <option value=""></option>
+                                <option value="rabbit">Rabbit</option>
+                                <option value="duck">Duck</option>
+                                <option value="fish">Fish</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Radio Buttons</label>
+                        <div>
+                            <div class="custom-control custom-radio custom-control-inline">
+                                <input name="radio" id="radio_0" type="radio" class="custom-control-input"
+                                    value="rabbit">
+                                <label for="radio_0" class="custom-control-label">Rabbit</label>
+                            </div>
+                            <div class="custom-control custom-radio custom-control-inline">
+                                <input name="radio" id="radio_1" type="radio" class="custom-control-input" value="duck">
+                                <label for="radio_1" class="custom-control-label">Duck</label>
+                            </div>
+                            <div class="custom-control custom-radio custom-control-inline">
+                                <input name="radio" id="radio_2" type="radio" class="custom-control-input" value="fish">
+                                <label for="radio_2" class="custom-control-label">Fish</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Checkboxes</label>
+                        <div>
+                            <div class="custom-control custom-checkbox custom-control-inline">
+                                <input name="checkbox" id="checkbox_0" type="checkbox" checked="checked"
+                                    class="custom-control-input" value="rabbit">
+                                <label for="checkbox_0" class="custom-control-label">Rabbit</label>
+                            </div>
+                            <div class="custom-control custom-checkbox custom-control-inline">
+                                <input name="checkbox" id="checkbox_1" type="checkbox" class="custom-control-input"
+                                    value="duck">
+                                <label for="checkbox_1" class="custom-control-label">Duck</label>
+                            </div>
+                            <div class="custom-control custom-checkbox custom-control-inline">
+                                <input name="checkbox" id="checkbox_2" type="checkbox" class="custom-control-input"
+                                    value="fish">
+                                <label for="checkbox_2" class="custom-control-label">Fish</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Checkboxes</label>
+                        <div>
+                            <div class="custom-control custom-checkbox custom-control-inline">
+                                <input name="checkbox1" id="checkbox1_0" type="checkbox" checked="checked"
+                                    class="custom-control-input" value="rabbit">
+                                <label for="checkbox1_0" class="custom-control-label">Rabbit</label>
+                            </div>
+                            <div class="custom-control custom-checkbox custom-control-inline">
+                                <input name="checkbox1" id="checkbox1_1" type="checkbox" class="custom-control-input"
+                                    value="duck">
+                                <label for="checkbox1_1" class="custom-control-label">Duck</label>
+                            </div>
+                            <div class="custom-control custom-checkbox custom-control-inline">
+                                <input name="checkbox1" id="checkbox1_2" type="checkbox" class="custom-control-input"
+                                    value="fish">
+                                <label for="checkbox1_2" class="custom-control-label">Fish</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <button name="submit" type="submit" class="btn btn-primary">
+                            <i class="fa fa-save"></i>
+                            Submit</button>
+                            <button type="reset" class="btn btn-secondary">reset</button>
+                    </div>
+                </form>
+                <!-- form end -->
+            </div>
+
+
+        </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            console.log('jQuery is working!');
+            //validation init
+
+            $("form[name='registration']").validate({
+
+                // Specify validation rules
+                rules: {
+                    // The key name on the left side is the name attribute
+                    // of an input field. Validation rules are defined
+                    // on the right side
+                    fullname: "required",
+                    Username: {
+                        required: true,
+                        minlength: 5
+                    },
+                    Email: {
+                        required: true,
+                        // Specify that email should be validated
+                        // by the built-in "email" rule
+                        email: true
+                    },
+                    password: {
+                        required: true,
+                        minlength: 5
+                    },
+                    about1: {
+                        required: true,
+                        minlength: 5
+                    },
+                    select1: "required",
+                    radio: "required",
+                    checkbox1: "required",
+                },
+                // Specify validation error messages
+                messages: {
+                    fullname: "Please enter your fullname",
+                    Username: {
+                        required: "Please provide a username",
+                        minlength: "Your username must be at least 5 characters long"
+                    },
+                    password: {
+                        required: "Please provide a password",
+                        minlength: "Your password must be at least 5 characters long"
+                    },
+                    about1: {
+                        required: "Please provide a about1",
+                        minlength: "Your about1 must be at least 5 characters long"
+                    },
+                    Email: "Please enter a valid email address"
+                },
+                // Make sure the form is submitted to the destination defined
+                // in the "action" attribute of the form when valid
+                submitHandler: function (form) {
+                    form.submit();
+                    
+                }
+            });
+            //validation end
+        });//ends doc ready
+
+    </script>
+</body>
+
+</html>
